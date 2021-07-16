@@ -36,10 +36,11 @@ public class Inicial extends JFrame {
 	 * Create the frame.
 	 */
 	public Inicial() {
+		setResizable(false);
 		setBackground(Color.WHITE);
 		setTitle("Tela Inicial");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 600);
+		setBounds(10, -119, 800, 600);
 		contentPane = new JPanel();
 		contentPane.setBackground(SystemColor.desktop);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -50,40 +51,45 @@ public class Inicial extends JFrame {
 		btnJogar.setForeground(new Color(255, 255, 255));
 		btnJogar.setBackground(new Color(0, 128, 128));
 		btnJogar.setFont(new Font("Pagul", Font.BOLD, 30));
-		btnJogar.setBounds(125, 399, 200, 70);
+		btnJogar.setBounds(126, 321, 200, 70);
 		contentPane.add(btnJogar);
 		
 		JButton btnNewButton = new JButton("Placar");
 		btnNewButton.setForeground(new Color(255, 255, 255));
 		btnNewButton.setBackground(new Color(0, 128, 128));
 		btnNewButton.setFont(new Font("Pagul", Font.BOLD, 30));
-		btnNewButton.setBounds(461, 399, 200, 70);
+		btnNewButton.setBounds(460, 321, 200, 70);
 		contentPane.add(btnNewButton);
 		
 		JLabel lblNewLabel = new JLabel("Mar profundo");
 		lblNewLabel.setForeground(new Color(255, 255, 255));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Pagul", Font.BOLD, 72));
-		lblNewLabel.setBounds(153, 207, 508, 84);
+		lblNewLabel.setBounds(153, 171, 508, 84);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Mergulhe no conhecimento");
 		lblNewLabel_1.setForeground(new Color(255, 255, 255));
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_1.setFont(new Font("Pagul", Font.BOLD, 20));
-		lblNewLabel_1.setBounds(247, 291, 312, 15);
+		lblNewLabel_1.setBounds(247, 280, 312, 15);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("Grupo 12");
 		lblNewLabel_1_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_1_1.setForeground(Color.WHITE);
 		lblNewLabel_1_1.setFont(new Font("Pagul", Font.BOLD, 16));
-		lblNewLabel_1_1.setBounds(247, 196, 312, 15);
+		lblNewLabel_1_1.setBounds(247, 138, 312, 15);
 		contentPane.add(lblNewLabel_1_1);
+		
+		JPanel pnlBack = new JPanel();
+		pnlBack.setBackground(new Color(5, 61, 87));
+		pnlBack.setBounds(0, 125, 800, 296);
+		contentPane.add(pnlBack);
 		
 		JLabel lblNewLabel_2 = new JLabel("Background");
 		lblNewLabel_2.setIcon(new ImageIcon("/home/molotov/Desktop/USP/POO/Eclipse/MarProfundo/back.jpg"));
-		lblNewLabel_2.setBounds(0, -13, 800, 600);
+		lblNewLabel_2.setBounds(0, 0, 800, 600);
 		contentPane.add(lblNewLabel_2);
 	}
 }
